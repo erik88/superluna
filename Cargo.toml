@@ -1,0 +1,34 @@
+[workspace]
+resolver = "3"
+members = ["crates/script-api", "crates/core", "crates/script-rhai", "crates/headless", "crates/bot", "crates/frontend", "crates/web-check"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+license = "MIT OR Apache-2.0"
+publish = false
+
+[workspace.dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+ron = "0.10"
+rhai = { version = "1.27", default-features = false, features = ["std", "no_float", "no_time", "only_i64"] }
+macroquad = { version = "0.4.16", default-features = false }
+ns-script-api = { path = "crates/script-api" }
+ns-core = { path = "crates/core" }
+ns-script-rhai = { path = "crates/script-rhai" }
+ns-headless = { path = "crates/headless" }
+
+[profile.dev.package."*"]
+opt-level = 2
+
+[profile.release]
+debug = 1
+
+# Small optimised build for the browser: `cargo build --profile web --target wasm32-unknown-unknown -p ns-frontend`
+[profile.web]
+inherits = "release"
+debug = false
+strip = true
+lto = true
+codegen-units = 1

@@ -1,0 +1,13 @@
+[package]
+name = "ns-web-check"
+description = "Runs the embedded level replays inside a WebAssembly engine to prove web and desktop agree"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+ns-headless.workspace = true

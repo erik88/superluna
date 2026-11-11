@@ -1,0 +1,16 @@
+[package]
+name = "ns-frontend"
+description = "Playable frontend (macroquad) for desktop and web, with placeholder art"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[[bin]]
+name = "platformer"
+path = "src/main.rs"
+
+[dependencies]
+macroquad.workspace = true
+ns-core.workspace = true
+ns-script-rhai.workspace = true

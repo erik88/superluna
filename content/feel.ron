@@ -1,0 +1,24 @@
+// The feel spec. Authored for this game; tune by playing it.
+// Units: SUB = 256 sub-pixels per pixel; speeds per frame; accelerations per frame per frame; 60 fps.
+// Measurable consequences are pinned in feel_targets.ron and checked by `cargo test`.
+(
+    walk_max: 384,        // 1.5 px/frame
+    run_max: 640,         // 2.5 px/frame
+    walk_accel: 16,
+    run_accel: 20,
+    air_accel: 14,
+    release_decel: 12,
+    skid_decel: 40,
+    gravity_held: 42,     // rising with jump held
+    gravity: 112,
+    max_fall: 1088,       // 4.25 px/frame
+    jump_velocity: 1152,  // 4.5 px/frame
+    jump_run_bonus: 160,  // added at full run speed
+    coyote_frames: 5,
+    buffer_frames: 6,
+    stomp_bounce: 1024,
+    player_w: 12,
+    player_h: 24,
+    camera_lead: 32,
+    camera_speed: 768,
+)

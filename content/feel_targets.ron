@@ -1,0 +1,12 @@
+// Measurable targets for the feel spec, in pixels and frames, as inclusive (min, max) ranges.
+// Change these deliberately: they are the design, feel.ron is how we get there.
+(
+    full_jump_height_px: (56, 68),     // standing, jump held: about 4 tiles
+    tap_jump_height_px: (14, 30),      // standing, jump tapped for one frame: 1-2 tiles
+    run_jump_height_px: (72, 88),      // at full run speed, jump held: about 5 tiles
+    frames_to_run_max: (24, 40),       // from standstill, holding run
+    run_jump_distance_px: (104, 150),  // at full run speed, jump held, flat ground to flat ground
+    coyote_frames_work: 4,             // a jump this many frames after walking off a ledge still works
+    coyote_frames_fail: 7,             // ... and this many frames after does not
+    buffered_jump_frames: 5,           // pressing jump this many frames before landing still jumps
+)

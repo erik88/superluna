@@ -1,0 +1,17 @@
+[package]
+name = "ns-headless"
+description = "Headless play for agents and CI: content loading, sessions, replays, JSON-lines protocol"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[[bin]]
+name = "ns"
+path = "src/bin/ns.rs"
+
+[dependencies]
+serde.workspace = true
+serde_json.workspace = true
+ns-core.workspace = true
+ns-script-rhai.workspace = true

@@ -1,0 +1,21 @@
+# replay v1
+level meadow-1
+seed 0
+inputs 30*RX 12*RJX 6*RX 6*RJX 12*RX 36*RJX 18*RX 36*RJX 18*RX 18*RJX 18*RX 6*RJ
+inputs 6*R 6*RJX 6*RX 36*RJX 36*RX 30*RJX 6*RX 36*RJX 18*RX 36*RJX 48*RX 36*RJX
+inputs 6*RX 36*RJX 30*RX 24*RJX 12*RX 36*RJX 30*RX 12*RJX 6*RX 6*RJX 18*RX 30*RJX
+inputs 4*RX
+check 60 f96af61b17665c68
+check 120 3a5d5fa2b9530b11
+check 180 a0bcdbf81104e417
+check 240 038bd0c6cbdca8c1
+check 300 5c5fae25a0592896
+check 360 c0ceb5b9a9e37860
+check 420 85bfd47fca405bd1
+check 480 fca3cdeaca04c1f6
+check 540 231e50bca84321ba
+check 600 3895edb6af9accdb
+check 660 071e3983e9ae392c
+check 720 5aa847a62c7cdfab
+check 766 3d4e7de8862e0a1c
+end won 766

@@ -1,0 +1,11 @@
+[package]
+name = "ns-script-rhai"
+description = "Rhai scripting backend (integer-only, no clock, sandboxed)"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[dependencies]
+rhai.workspace = true
+ns-script-api.workspace = true

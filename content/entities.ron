@@ -1,0 +1,6 @@
+// Entity kinds. Hitboxes are in pixels and are part of the asset contract: sprites are drawn
+// around them, never measured from sprite pixels.
+{
+    "walker": (script: "walker", w: 14, h: 14),
+    "hopper": (script: "hopper", w: 14, h: 12),
+}
