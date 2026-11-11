@@ -1,4 +1,4 @@
-# Untitled Platformer (working title)
+# Superluna
 
 A free, open, 16-bit-style platformer made for modding, with controls tuned to feel like the
 classic SNES platformers, Super Mario World above all.

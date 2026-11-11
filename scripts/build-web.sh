@@ -5,5 +5,5 @@ cd "$(dirname "$0")/.."
 cargo build --target wasm32-unknown-unknown --profile web -p ns-frontend
 mkdir -p web/dist
 cp web/index.html web/mq_js_bundle.js web/dist/
-cp target/wasm32-unknown-unknown/web/platformer.wasm web/dist/
+cp target/wasm32-unknown-unknown/web/superluna.wasm web/dist/
 ls -lh web/dist

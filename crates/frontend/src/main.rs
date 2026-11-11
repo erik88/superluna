@@ -191,7 +191,7 @@ fn draw_world(game: &Game) {
 
 fn window_conf() -> Conf {
     Conf {
-        window_title: "Untitled Platformer".to_string(),
+        window_title: "Superluna".to_string(),
         window_width: SCREEN_W * SCALE,
         window_height: SCREEN_H * SCALE,
         high_dpi: false,
