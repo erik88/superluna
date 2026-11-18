@@ -17,4 +17,6 @@ Read `README.md` first. It covers the layout, commands and the originality rules
   unordered iteration that affects state.
 - Every level ships with a replay that completes it. After changing physics, scripts or levels,
   regenerate with `cargo run --release -p ns-bot -- <level> --write`, then run `scripts/ci.sh`.
+- `scripts/doctor.sh` reports what this machine can do (build, play, web, push) and how to fix
+  what's missing. Run `scripts/doctor.sh build web` before `scripts/ci.sh` on a new machine.
 - Script errors fail CI. Scripts read top-level constants as `global::NAME`.
